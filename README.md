@@ -2,6 +2,8 @@
 
 Unified Robot Description Format of protobot, the 3D printed ROS enabled robot.
 
+![Rviz](rviz.png)
+
 ## Required packages
 
 ros_control
