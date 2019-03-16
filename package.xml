@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>protobot_urdf</name>
-  <version>1.0.0</version>
-  <description>It is a model of the robot protobot</description>
+  <version>1.1.0</version>
+  <description>Unified Robot Description Format for protobot</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="mayavan95@gmail.com">mayavan</maintainer>

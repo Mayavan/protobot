@@ -18,5 +18,5 @@ joint3_position_controller:
   pid: {p: 20000.0, i: 50, d: 1000.0}
 joint4_position_controller:
   type: effort_controllers/JointPositionController
-  joint: link_03_gripper
+  joint: link_03_link_04
   pid: {p: 2000.0, i: 50, d: 200.0}

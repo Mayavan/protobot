@@ -1,11 +1,13 @@
-# protobot_urdf
-URDF of protobot, the 3D printed ROS enabled robot
+# Protobot URDF
 
-# Installation
-install ros-kinetic-gazebo-ros-control by :
+Unified Robot Description Format of protobot, the 3D printed ROS enabled robot.
 
-```
-'''
-sudo apt install ros-kinetic-gazebo-ros-control
-'''
+## Required packages
+
+ros_control
+
+### Installation
+
+``` - Linux terminal
+sudo apt-get install ros-kinetic-ros-control ros-kinetic-ros-controllers
 ```
