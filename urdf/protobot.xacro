@@ -37,6 +37,11 @@
   <m_joint name="link_03_link_04" type="revolute" axis_xyz="0 0 1" origin_rpy="0 0 0" origin_xyz="-0.25 0 0" parent="link_03" child="link_04" limit_e="1000" limit_l="-1.74" limit_u="1.74" limit_v="0.5" />
 
   <m_link_mesh name="link_04" origin_rpy="0 0 0" origin_xyz="0 0 0" mass="0.195" ixx="0.000044281" ixy="0" ixz="0" iyy="0.000107656" iyz="0" izz="0.000107656" meshfile="package://protobot_urdf/meshes/link_04.stl" meshscale="0.001 0.001 0.001" material="orange" />
+  
+  <m_joint name="link_04_link_05" type="revolute" axis_xyz="0 0 1" origin_rpy="0 -1.57 0" origin_xyz="-0.09 0 -0.0175" parent="link_04" child="link_05" limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+
+  <m_link_mesh name="link_05" origin_rpy="0 0 0" origin_xyz="0 0 0" mass="0.195" ixx="0.000044281" ixy="0" ixz="0" iyy="0.000107656" iyz="0" izz="0.000107656" meshfile="package://protobot_urdf/meshes/link_05.stl" meshscale="0.001 0.001 0.001" material="orange" />
+  
   <!-- END - Robot description -->
 
   <gazebo>
