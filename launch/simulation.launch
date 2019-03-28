@@ -1,0 +1,38 @@
+<launch>
+  <arg name="model" default="$(find protobot_urdf)/urdf/protobot.xacro"/>
+  <arg name="rvizconfig" default="$(find protobot_urdf)/launch/urdf.rviz" />
+
+  <include file="$(find protobot_urdf)/launch/gazebo.launch">
+    <arg name="model" value="$(arg model)" />
+  </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
+
+  <rosparam command="load"
+            file="$(find protobot_urdf)/config/joint_state_controller.yaml"
+            ns="protobot_joint_state_controller" />
+  <rosparam command="load"
+            file="$(find protobot_urdf)/config/joint1_position_controller.yaml"
+            ns="protobot_joint1_controller" />
+  <rosparam command="load"
+            file="$(find protobot_urdf)/config/joint2_position_controller.yaml"
+            ns="protobot_joint2_controller" />
+  <rosparam command="load"
+            file="$(find protobot_urdf)/config/joint3_position_controller.yaml"
+            ns="protobot_joint3_controller" />
+  <rosparam command="load"
+            file="$(find protobot_urdf)/config/joint4_position_controller.yaml"
+            ns="protobot_joint4_controller" />
+  <rosparam command="load"
+            file="$(find protobot_urdf)/config/joint5_position_controller.yaml"
+            ns="protobot_joint5_controller" />
+
+  <node name="protobot_controller_spawner" pkg="controller_manager" type="spawner"
+    args="protobot_joint_state_controller
+          protobot_joint1_controller
+          protobot_joint2_controller
+          protobot_joint3_controller
+          protobot_joint4_controller
+          protobot_joint5_controller
+          --shutdown-timeout 3"/>
+</launch>

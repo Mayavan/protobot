@@ -1,0 +1,2 @@
+type: "position_controllers/JointPositionController"
+joint: link_01_link_02
