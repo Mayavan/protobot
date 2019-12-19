@@ -1,6 +1,6 @@
-# Protobot URDF
+# Protobot
 
-Unified Robot Description Format of protobot, the 3D printed ROS enabled desktop robot.
+Package to use Protobot, the 3D printed 5-DOF robot.
 
 ![Rviz](rviz.png)
 
