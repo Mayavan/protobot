@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: protobot_description
+    relative_path: urdf/protobot.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/protobot.srdf
+  CONFIG:
+    author_name: Mayavan
+    author_email: mayavan95@gmail.com
+    generated_timestamp: 1576789708
