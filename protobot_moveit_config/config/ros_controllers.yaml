@@ -22,7 +22,16 @@ protobot:
     type: joint_state_controller/JointStateController
     publish_rate: 50
   controller_list:
-    []
+    - name: joint_trajectory_controller
+      action_ns: follow_joint_trajectory
+      default: True
+      type: FollowJointTrajectory
+      joints:
+        - base_link_link_01
+        - link_01_link_02
+        - link_02_link_03
+        - link_03_link_04
+        - link_04_link_05
   arm_position_controller:
     type: position_controllers/JointPositionController
     joints:
